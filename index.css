@@ -1,3 +1,6 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/font.css);
+
 * {
   text-decoration: none;
   list-style: none;
@@ -5,15 +8,14 @@
   margin: 0;
 }
 
-@import url(./vendor/normalize.css);
-@import url(./vendor/fonts/font.css);
-
 .pricing__table {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 0 auto;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .pricing__title {
@@ -96,6 +98,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
+  vertical-align: top;
 }
 
 .pricing__item-cover {
@@ -124,10 +127,11 @@
   text-align: center;
   color: #ffffff;
   display: flex;
-  height: 100%;
-  align-items: flex-end;
+  background-color: transparent;
+  align-items: center;
   justify-content: center;
-
+  max-width: 196px;
+  min-height: 40px;
 }
 
 .pricing__items_personal {
